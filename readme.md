@@ -8,4 +8,4 @@
 
 #news-----------D0511192
 
-![image](https://github.com/ButBueatiful/dotvim/raw/master/screenshots/vim-screenshot.jpg)
+![image](https://truth.bahamut.com.tw/s01/201608/0585326f29d09c44b4326040d649e631.JPG)
