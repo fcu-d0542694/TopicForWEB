@@ -7,3 +7,5 @@
 #language-------D0542397
 
 #news-----------D0511192
+
+![image](https://github.com/ButBueatiful/dotvim/raw/master/screenshots/vim-screenshot.jpg)
