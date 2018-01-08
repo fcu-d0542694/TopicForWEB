@@ -20,7 +20,6 @@
     }
     .nevigation-bar {
       text-align: center;
-      font-family: monospace;
       background-color: #24b04d;
       /*height: 6%;*/
       width: 100%;
@@ -28,18 +27,13 @@
       margin-top: 0px;
       border: 0px;
     }
-    .nevigation-bar h1 {
-      margin-top: 10px;
-      opacity: 1;
-      color: rgb(247, 196, 196);
-    }
-    ul {
+    .nevigation-bar ul {
       list-style-type: none;
+      overflow: hidden;
       margin: 0;
       padding: 0;
-      overflow: hidden;
     }
-    li {
+    .nevigation-bar li {
         float: left;
     }
      #top {
@@ -91,10 +85,16 @@
     .list {
       border: 3px solid rgb(106, 109, 102);
       background-color: rgb(106, 109, 102);
-      font-family: monospace;
-      width: 15%;
+      padding: auto;
       height: 70%;
-	}
+	  }
+    .list li a{
+      display: block;
+      padding: 20px 0px;
+      font-size: 20px;
+      text-align: center;
+      text-decoration: none;
+    }
     #title {
        color: #FFFFFF;
        font-family: "微軟正黑體";
@@ -106,9 +106,7 @@
       background-color: rgb(106, 109, 102);
       width: 75%;
       height: 13%;
-	}
-	
-	
+	  }
     footer {
       display: block;
       color: white;
@@ -117,39 +115,49 @@
       text-align: center;
       margin: 0px;
       padding: 20px;
+      font-family: "微軟正黑體";
+    }
+	  marquee {
+		  font-family: "微軟正黑體";
+  	}
+    .list li a{
+      text-align: center;
     }
   </style>
 </head>
 
 <body>
 <div class="container-fluid">
-	<!--top selection bar-->
-	<div class="nevigation-bar row">
-		<ul>
-			<li><a id="top" href="../index.html">HOME</a></li>
-			<li><a id="top" href="../broadcast/broadcast.html">教學網站</a></li>
-			<li><a id="top" href="../health/health.html">醫療衛生知識</a></li>
-			<li><a id="top" href="../language/language.html">母語教室</a></li>
-			<li><a id="top" href="../feature/feature.html">偏鄉特色</a></li>
-			<li><a id="top" href="news.html">國際資訊</a></li> 
-    </ul>
-	</div>
+  <!--top selection bar-->
+  <div class="row">
+  	<div class="nevigation-bar">
+	  	<ul>
+	  		<li><a id="top" href="../index.html">HOME</a></li>
+	  		<li><a id="top" href="../broadcast/broadcast.html">教學網站</a></li>
+	  		<li><a id="top" href="../health/health.html">醫療衛生知識</a></li>
+	  		<li><a id="top" href="../language/language.html">母語教室</a></li>
+	  		<li><a id="top" href="../feature/feature.html">偏鄉特色</a></li>
+	 		  <li><a id="top" href="news.html">國際資訊</a></li> 
+      </ul>
+    </div>
+  </div>
 
 	<div class="row">
   <!--leftside seletion bar-->
-		<div class ="list col-sm-3">
-			<ul>
-      <br></br>
-				<li><a id="list" href="#news1">國際情勢</a></li>
-				<li><a id="list" href="#news2">國際旅遊</a></li>
-				<li><a id="list" href="#news3">特色美食</a></li>
-				<li><a id="list" href="#news4">未來展望</a></li>
-				<li><a id="list" href="#news5">國際新聞</a></li>
-			</ul>
+		<div class ="col-sm-3">
+      <div class="list">
+  			<ul class="nav">
+  				<li><a id="list" href="#news1">國際情勢</a></li>
+	  			<li><a id="list" href="#news2">國際旅遊</a></li>
+	  			<li><a id="list" href="#news3">特色美食</a></li>
+	  			<li><a id="list" href="#news4">未來展望</a></li>
+	  			<li><a id="list" href="#news5">國際新聞</a></li>
+        </ul>
+      </div>
     </div>
     
 		<div class ="col-sm-9 row">
-		<marquee class="col-sm-12" behavior="alternate"><h1>全球焦點</h1></marquee>
+		  <marquee class="col-sm-12" behavior="alternate"><h1>全球焦點</h1></marquee>
       </br>			
 			<div class="col-sm-6">
         <h1>2 arrested in South Korea's deadliest fire in years</h1>
@@ -194,10 +202,10 @@
 	<footer>
 		<h3>偏鄉救援計畫</h3>
 		<hr style="width: 60%;">
-		<p style="magin-bottom: 0px; font-size: 18px">Contact Us</p>
+		<p style="margin-bottom: 0px; font-size: 18px">Contact Us</p>
 		<div>
-			<a href="https://zh-tw.facebook.com/"><img src="https://image.flaticon.com/icons/svg/33/33702.svg" width="30px" style="margin-right: 30px;"></a>
-			<a href="https://github.com/"><img src="https://image.flaticon.com/icons/svg/25/25231.svg" width="30px" style="margin-right: 30px;"></a>
+			<a href="https://www.facebook.com/fcuiecs/?ref=br_rs"><img src="https://image.flaticon.com/icons/svg/33/33702.svg" width="30px" style="margin-right: 30px;"></a>
+			<a href="https://github.com/fcu-D0511192"><img src="https://image.flaticon.com/icons/svg/25/25231.svg" width="30px" style="margin-right: 30px;"></a>
 			<a href="http://www.iecs.fcu.edu.tw/"><img src="https://image.flaticon.com/icons/svg/149/149229.svg" width="30px"></a>
 		</div>
     </footer>
